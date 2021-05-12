@@ -45,7 +45,7 @@ def display_controls():
     print('Press F4 to start ...')
 
 
-def line_by_line():
+def line_auto_type():
     lis = Listener(on_press=on_press)
     lis.start()
 
@@ -68,7 +68,7 @@ def line_by_line():
                         pass          
     lis.stop()        
 
-def all_lines():
+def full_auto_type():
     lis = Listener(on_press=on_press)
     lis.start()
     display_controls()
@@ -95,7 +95,7 @@ def all_lines():
 
 if __name__ == "__main__":
     if type_style == '1':
-        all_lines()
+        full_auto_type()
     else:
-        line_by_line()
+        line_auto_type()
    
